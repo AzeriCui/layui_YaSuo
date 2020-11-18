@@ -1,0 +1,56 @@
+﻿
+.layui-layout-admin .layui-body { top: 100px; bottom: 0px; }
+
+.yasuo-tab-box { height: 40px; line-height: 40px; padding: 0 120px 0 80px; background-color: #fff; box-sizing: border-box; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); position: fixed; top: 60px; right: 0; z-index: 999; left: 200px; }
+    .yasuo-tab-box .yasuo-tab-nav { position: absolute; top: 0; width: 40px; height: 100%; text-align: center; cursor: pointer; box-sizing: border-box; border-left: 1px solid #f6f6f6; }
+        .yasuo-tab-box .yasuo-tab-nav.yasuo-icon-menu { left: 0px; }
+        .yasuo-tab-box .yasuo-tab-nav.yasuo-icon-left { left: 40px; }
+        .yasuo-tab-box .yasuo-tab-nav.yasuo-icon-right { right: 80px; }
+        .yasuo-tab-box .yasuo-tab-nav.yasuo-icon-refresh { right: 40px; }
+        .yasuo-tab-box .yasuo-tab-nav.yasuo-icon-clear { right: 0px; }
+
+    .yasuo-tab-box .yasuo-tab-nav-box { border-left: 1px solid #f6f6f6; overflow: hidden; position: relative; }
+        .yasuo-tab-box .yasuo-tab-nav-box .yasuo-nav-title { border: none; height: 40px; position: relative; left: 0; white-space: nowrap; transition: all 0.2s; }
+            .yasuo-tab-box .yasuo-tab-nav-box .yasuo-nav-title li { display: inline-block; border-right: 1px solid #f6f6f6; padding: 0 10px; height: 40px; }
+                .yasuo-tab-box .yasuo-tab-nav-box .yasuo-nav-title li.yasuo-active { background-color: #f6f6f6; }
+                .yasuo-tab-box .yasuo-tab-nav-box .yasuo-nav-title li .layui-icon { font-size: 12px; margin-left: 5px; }
+
+.yasuo-nav-content .yasuo-tab-item { position: absolute; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; display: none; }
+    .yasuo-nav-content .yasuo-tab-item .yasuo-iframe { position: absolute; width: 100%; height: 100%; left: 0; top: 0; right: 0; bottom: 0; }
+
+.yasuo-rotate-180deg { transform: rotate(180deg); display: inline-block; }
+
+.layui-fluid { padding: 15px; }
+.yasuo-crumb { position: absolute; right: 20px; height: 38px; top: 2px; }
+    .yasuo-crumb > * { font-size: 12px; }
+
+.yasuo-search-box { padding-left: 25px; }
+    .yasuo-search-box .layui-inline { margin-bottom: 10px; }
+        .yasuo-search-box .layui-inline .yasuo-button-group { padding-left: 25px; }
+            .yasuo-search-box .layui-inline .yasuo-button-group .layui-icon { font-size: 14px; margin-right: 0px; }
+
+
+.yasuo-user-box { width: 280px; right: 0; left: auto; padding: 0px; }
+    .yasuo-user-box .yasuo-user-header { padding: 10px; text-align: center; background-color: #23262e; }
+        .yasuo-user-box .yasuo-user-header img { height: 90px; width: 90px; border: 3px solid; border-color: rgba(255,255,255,0.2); border-radius: 50%; vertical-align: middle; box-sizing: border-box; }
+        .yasuo-user-box .yasuo-user-header p { color: #f0f0f0; font-size: 16px; }
+            .yasuo-user-box .yasuo-user-header p small { font-size: 12px; display: block; line-height: 20px; }
+    .yasuo-user-box .yasuo-user-body { padding: 15px; border-bottom: 1px solid #e2e2e2; border-top: 1px solid #f6f6f6; text-align: center; }
+        .yasuo-user-box .yasuo-user-body a { padding: 0px; }
+
+    .yasuo-user-box .yasuo-user-footer { padding: 10px; text-align: center; background-color: #f2f2f2; position: relative; height: 32px; }
+        .yasuo-user-box .yasuo-user-footer .yasuo-pull-left { position: absolute; left: 10px; top: 10px; }
+        .yasuo-user-box .yasuo-user-footer .yasuo-pull-right { position: absolute; right: 10px; top: 10px; }
+
+
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after { height: 0px; }
+
+.yasuo-skin { }
+    .yasuo-skin .layui-layout-admin .layui-header { background-color: #01aaed; }
+    .yasuo-skin .layui-layout-admin .layui-logo { background-color: #1e9fff; color: #f0f0f0; }
+    .yasuo-skin .layui-layout-admin .layui-header .layui-nav .layui-nav-item a { color: #f0f0f0; }
+    .yasuo-skin .yasuo-user-box .yasuo-user-header { background-color: #01aaed; }
+    .yasuo-skin .yasuo-user-box a { color: #393D49 !important; }
+    .yasuo-skin .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this > a, .layui-nav-tree .layui-this > a:hover { background-color: #01aaed; }
+    .yasuo-skin .layui-nav-tree .layui-nav-bar { background-color: #1e9fff; }
+    .yasuo-skin .layui-btn-primary:hover { border-color: #1e9fff !important; }

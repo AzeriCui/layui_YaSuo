@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="Bookmark" href="favicon.ico" />
+    <link rel="Shortcut Icon" href="favicon.ico" />
+    <title>后台管理系统 - layui_YaSuo</title>
+    <link href="content/lib/layui/css/layui.css" rel="stylesheet" />
+    <link href="content/css/yasuo.css" rel="stylesheet" />
+</head>
+<body class="layui-layout-body layui-bg-gray yasuo-skin">
+    <div class="layui-layout layui-layout-admin">
+
+        <div class="layui-header">
+            <div class="layui-logo">YaSuo后台管理系统</div>
+
+            <!--<ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="javascript:void(0);">大模块一</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);">大模块二</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href=""><i class="layui-icon layui-icon-circle"></i> 模块二杠一</a></dd>
+                        <dd><a href=""><i class="layui-icon layui-icon-circle"></i> 模块二杠二</a></dd>
+                        <dd><a href=""><i class="layui-icon layui-icon-circle"></i> 模块二杠三</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:void(0);">大模块三</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);">大模块四</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href=""><i class="layui-icon layui-icon-circle"></i> 模块四杠一</a></dd>
+                        <dd><a href=""><i class="layui-icon layui-icon-circle"></i> 模块四杠二</a></dd>
+                        <dd><a href=""><i class="layui-icon layui-icon-circle"></i> 模块四杠三</a></dd>
+                    </dl>
+                </li>
+            </ul>-->
+
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);" title="控制台">
+                        <i class="layui-icon layui-icon-console"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);" title="邮件">
+                        <i class="layui-icon layui-icon-email"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);" title="通知">
+                        <i class="layui-icon layui-icon-notice"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);" title="任务">
+                        <i class="layui-icon layui-icon-flag"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:void(0);">
+                        <img src="content/img/head.jpg" class="layui-nav-img" />
+                        超级管理员
+                    </a>
+                    <dl class="layui-nav-child yasuo-user-box">
+                        <dd class="yasuo-user-header">
+                            <img src="content/img/head.jpg" alt="" />
+                            <p>
+                                李奇微 - 职位
+                                <small>超级管理员 & 角色1 & 角色2</small>
+                            </p>
+
+                        </dd>
+                        <dd class="yasuo-user-body">
+                            <div class="layui-row">
+                                <div class="layui-col-md4">
+                                    <a href="#">基本资料</a>
+                                </div>
+                                <div class="layui-col-md4">
+                                    <a href="#">基本资料</a>
+                                </div>
+                                <div class="layui-col-md4">
+                                    <a href="#">基本资料</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd class="yasuo-user-footer">
+                            <div class="yasuo-pull-left">
+                                <a href="" class="layui-btn layui-btn-primary layui-btn-sm">设置</a>
+                            </div>
+                            <div class="yasuo-pull-right">
+                                <a href="" class="layui-btn layui-btn-primary layui-btn-sm">退出</a>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <!--<li class="layui-nav-item">
+                    <a href="javascript:void(0);" title="退出">
+                        <i class="layui-icon layui-icon-logout"></i>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-menu-fill"></i> 模块一</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:yasuo.openFrame(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表一</a></dd>
+                            <dd><a href="javascript:yasuo.openFrame(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表二</a></dd>
+                            <dd><a href="javascript:yasuo.openFrame(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表三</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-menu-fill"></i> 模块二</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表一</a></dd>
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表二</a></dd>
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表三</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-menu-fill"></i> 模块三</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表一</a></dd>
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表二</a></dd>
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表三</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-menu-fill"></i> 模块四</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表一</a></dd>
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表二</a></dd>
+                            <dd><a href="javascript:void(0);"><i class="layui-icon layui-icon-circle-dot"></i> 列表三</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="yasuo-tab-box">
+            <div class="yasuo-tab-nav yasuo-icon-menu">
+                <a href="javascript:void(0);" title="菜单伸缩">
+                    <i class="layui-icon layui-icon-slider yasuo-rotate-180deg"></i>
+                </a>
+            </div>
+            <div class="yasuo-tab-nav yasuo-icon-left">
+                <a href="javascript:void(0);" title="左">
+                    <i class="layui-icon layui-icon-left"></i>
+                </a>
+            </div>
+            <div class="yasuo-tab-nav yasuo-icon-right">
+                <a href="javascript:void(0);" title="右">
+                    <i class="layui-icon layui-icon-right"></i>
+                </a>
+            </div>
+            <div class="yasuo-tab-nav yasuo-icon-refresh">
+                <a href="javascript:void(0);" title="刷新">
+                    <i class="layui-icon layui-icon-refresh"></i>
+                </a>
+            </div>
+            <div class="yasuo-tab-nav yasuo-icon-clear">
+                <a href="javascript:void(0);" title="清除其它">
+                    <i class="layui-icon layui-icon-close"></i>
+                </a>
+            </div>
+
+            <div class="yasuo-tab-nav-box">
+                <ul class="yasuo-nav-title">
+                    <li class="yasuo-active">
+                        <a href="javascript:void(0);">网站设置1</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置2</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置3</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置4</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置5</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置6</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置7</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置8</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置9</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置10</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置11</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置12</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置13</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置14</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置15</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置16</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置17</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置18</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置19</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置20</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="yasuo-active">
+                        <a href="javascript:void(0);">网站设置21</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置22</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置23</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置24</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置25</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置26</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置27</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置28</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置29</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置30</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置31</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置32</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置33</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置34</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置35</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置36</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置37</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置38</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置39</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);">网站设置40</a>
+                        <a href="javascript:void(0);"><i class="layui-icon layui-icon-close"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body yasuo-nav-content">
+            <div class="yasuo-tab-item layui-show">
+                <iframe src="view/user/list.html" frameborder="0" class="yasuo-iframe"></iframe>
+            </div>
+            <div class="yasuo-tab-item">
+                <iframe src="view/user/list.html" frameborder="0" class="yasuo-iframe"></iframe>
+            </div>
+            <div class="yasuo-tab-item">
+                <iframe src="view/user/list.html" frameborder="0" class="yasuo-iframe"></iframe>
+            </div>
+            <div class="yasuo-tab-item">
+                <iframe src="view/user/list.html" frameborder="0" class="yasuo-iframe"></iframe>
+            </div>
+            <div class="yasuo-tab-item">
+                <iframe src="view/user/list.html" frameborder="0" class="yasuo-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="content/lib/layui/layui.all.js" charset="utf-8"></script>
+    <script src="content/js/index.js"></script>
+
+    <script>
+
+        debugger
+
+        //function add(a, b) {
+
+        //    var dom = this;
+
+        //    debugger
+
+        //    return a + b;
+        //}
+
+        //function sub(a, b) {
+
+        //    var dom = this;
+
+        //    debugger
+
+
+        //    return a - b;
+        //}
+
+        //var a1 = add.apply(sub, [4, 2]);　　//sub调用add的方法
+        //var a2 = sub.apply(add, [4, 2]);
+        //alert(a1);  //6
+        //alert(a2);  //2
+
+        ///*call的用法*/
+        //var a1 = add.call(sub, 4, 2);
+        //alert(a1);
+
+
+
+        //function ad() {
+
+        //    var dom = this;
+
+        //    debugger
+
+        //}
+
+        //ad();
+        //ad.apply($(".layui-side"));
+
+        //ad();
+        ////ad.call();
+        //ad.call($(".layui-side"));
+
+    </script>
+
+</body>
+</html>
